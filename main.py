@@ -1,15 +1,13 @@
 import logging
+import sys
 
 logger = logging.getLogger(__name__)
+logger.addHandler(logging.NullHandler())
 
 
-def init():
-    logger.info('init')
+def main():
+    logger.info(f'execute task with args {sys.argv}')
 
 
-def run():
-    logger.info('run')
-
-
-def teardown():
-    logger.info('teardown')
+if __name__ == '__main__':
+    main()
