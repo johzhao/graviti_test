@@ -11,9 +11,10 @@ def init():
     init_in_other()
 
 
-def run(data: dict, params: dict = None):
+def run(data: dict, params: dict = None) -> bool:
     logger.info(f'run with data {data} and params {params}')
     run_in_other()
+    return True
 
 
 def teardown():
