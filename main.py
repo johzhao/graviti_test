@@ -11,8 +11,8 @@ def init():
     init_in_other()
 
 
-def run():
-    logger.info('run')
+def run(data: dict):
+    logger.info(f'run with data {data}')
     run_in_other()
 
 
